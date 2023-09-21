@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "employee-tracker",
+  "description": "## Description  Build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akcodes29/Employee-Tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akcodes29/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/akcodes29/Employee-Tracker#readme",
+
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.6.1"
+  }
+
+}
