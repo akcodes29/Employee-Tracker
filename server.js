@@ -236,7 +236,7 @@ const updateEmployeeRole = () => {
     .then((answers) => {
         console.log(answers)
         connection.query(
-            `UPDATE employee SET role_id = ('${answers.updateRoleTitle}') WHERE employee.role_id`,
+            `UPDATE employee SET role_id = ('${answers.updateRoleTitle}') WHERE employee.id = employee.role_id `,
             function (err, results) {
                 console.log(err);
                 console.log('new role has been added!'); // results contains rows returned by server
