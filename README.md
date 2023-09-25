@@ -33,8 +33,12 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Install
 Inquirer 8.2.4
+Mysql2 3.6.1
+console.table 0.10.0
 
 ## Usage
+
+How to use this application: In the terminal run the command "node server.js", you will be met with many prompts as to what you would like to do with the database. Follow the prompts depending on which commands you chose.
 
 ## Credits
 
