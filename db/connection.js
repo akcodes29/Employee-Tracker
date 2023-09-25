@@ -9,4 +9,4 @@ const connection = mysql.createConnection({
   password: 'root'
 });
 
-module.exports = connection
+module.exports = connection;
