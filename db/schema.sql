@@ -3,10 +3,12 @@ CREATE DATABASE employee_tracker;
 
 USE employee_tracker;
 
+
 create table department (
 id int primary key auto_increment,
 name varchar(30) not null
 );
+
 
 create table role (
 id int primary key auto_increment,
@@ -17,6 +19,7 @@ department_id int,
   REFERENCES department(id)
   ON DELETE CASCADE
 );
+
 
 create table employee (
 id int primary key auto_increment,

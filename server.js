@@ -2,9 +2,6 @@ const inquirer = require('inquirer');
 const connection = require('./db/connection.js');
 require('console.table');
 
-
-
-
 connection.connect(
     (error) => {
         if (error) {
@@ -159,6 +156,19 @@ const showAllRoles = () => {
 }
 
 const addEmployee = () => {
+
+    connection.query('select * from role', function (err, res) {
+        const roleOptions = res.map(({ id, title }) => ({
+            name: title,
+            value: id
+        }))
+
+        connection.query('select * from employee', function (err, res) {
+            const managerId = res.map(({id, managerFirstName, manager_id}) => ({
+                name:  manager_id + managerFirstName,
+                value: id, 
+            }))
+
     inquirer.prompt([
         {
             type: "input",
@@ -174,13 +184,13 @@ const addEmployee = () => {
             type: "list",
             name: "role_id",
             message: "What is the employee's role?",
-            choices: ['Sales Lead', 'Salesperson', 'Lead Engineer', 'Software Engineer', 'Account Manager', 'Accountant', 'Legal Team Lead', 'Lawyer', 'Customer Service']
+            choices: roleOptions
         },
         {
             type: "list",
             name: "manager_id",
-            message: "Who is the employee's manager",
-            choices: ['None', 'Drake', 'Taylor Swift', 'Kenny Chesney', 'Morgan Wallen', 'Jesus']
+            message: "Who is the employee's manager?",
+            choices: managerId
         }
     ])
         .then((answers) => {
@@ -190,10 +200,13 @@ const addEmployee = () => {
                 function (err, results) {
                     console.log(err);
                     console.table(results); // results contains rows returned by server
-
+                    askUser()
                 }
             )
         })
+    })
+})
+
 }
 
 const showAllEmployees = () => {

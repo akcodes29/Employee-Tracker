@@ -28,4 +28,6 @@ VALUES
     ('John', 'Cap', 1, NULL),
     ('Courtney', 'Parm', 2, 1),
     ('Nicky', 'Bacon', 3, NULL),
-    ('Kevin', 'Carr', 4, 3);
+    ('Kevin', 'Carr', 4, 3),
+    ('Preston', 'Scott', 5, 4);
+ 
