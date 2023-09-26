@@ -3,7 +3,6 @@
 ## Description 
 Build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
-## Table of Contents
 
 ## User Story
 
@@ -41,13 +40,17 @@ console.table 0.10.0
 How to use this application: In the terminal run the command "node server.js", you will be met with many prompts as to what you would like to do with the database. Follow the prompts depending on which commands you chose.
 
 ## Credits
+N/A
 
 ## License
-
+N/A
 ## Screenshot
+![SS](image.png)
 
 ## Video Link
+https://www.circuit5.org/wp-content/uploads/2023/08/checklist-for-summary-administration.pdf
 
-## Deployed 
+
+
 
 
