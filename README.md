@@ -48,7 +48,7 @@ N/A
 ![SS](image.png)
 
 ## Video Link
-https://www.circuit5.org/wp-content/uploads/2023/08/checklist-for-summary-administration.pdf
+https://drive.google.com/file/d/1NnSzzFdxiAQx_gp0K1YibpgNxyM8BrAm/view
 
 
 
